@@ -157,6 +157,23 @@ namespace WeightedAndDirectedGraphs
             return null;
         }
 
+        public List<Vertex<T>> Dijkstra(T start, T end)
+        {
+            return Dijkstra(Search(start), Search(end));
+        }
+
+        public List<Vertex<T>> Dijkstra(Vertex<T> start, Vertex<T> end)
+        {
+            if (!(vertices.Contains(start) && vertices.Contains(end)))
+            {
+                return null;
+            }
+
+
+
+            return null;
+        }
+
         //public bool IfNegativeCycleExists()
         //{
         //    var ctrlA = new Queue<Vertex<T>>();

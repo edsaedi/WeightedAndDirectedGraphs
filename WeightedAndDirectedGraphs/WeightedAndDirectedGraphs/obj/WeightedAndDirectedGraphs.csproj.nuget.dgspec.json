@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Documents\\Visual Studio 2019\\Projects\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj": {}
+    "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Desktop\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj": {}
   },
   "projects": {
-    "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Documents\\Visual Studio 2019\\Projects\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj": {
+    "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Desktop\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Documents\\Visual Studio 2019\\Projects\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj",
+        "projectUniqueName": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Desktop\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj",
         "projectName": "WeightedAndDirectedGraphs",
-        "projectPath": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Documents\\Visual Studio 2019\\Projects\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj",
+        "projectPath": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Desktop\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs.csproj",
         "packagesPath": "C:\\Users\\Edan.Saedi\\.nuget\\packages\\",
-        "outputPath": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Documents\\Visual Studio 2019\\Projects\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\obj\\",
+        "outputPath": "\\\\GMRDC1\\Folder Redirection\\Edan.Saedi\\Desktop\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\WeightedAndDirectedGraphs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
