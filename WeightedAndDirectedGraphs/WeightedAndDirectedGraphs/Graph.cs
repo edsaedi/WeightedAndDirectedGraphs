@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace WeightedAndDirectedGraphs
 {
     public class Graph<T>
     {
+        public enum Heuristics
+        {
+            Manhattan,
+            Euclidean
+        }
+
         private List<Vertex<T>> vertices { get; set; }
 
         public int Count => Vertices.Count;
@@ -157,21 +164,81 @@ namespace WeightedAndDirectedGraphs
             return null;
         }
 
-        public List<Vertex<T>> Dijkstra(T start, T end)
+        public IEnumerable<Vertex<T>> Dijkstra(T start, T end)
         {
             return Dijkstra(Search(start), Search(end));
         }
 
-        public List<Vertex<T>> Dijkstra(Vertex<T> start, Vertex<T> end)
+        public IEnumerable<Vertex<T>> Dijkstra(Vertex<T> start, Vertex<T> end)
         {
             if (!(vertices.Contains(start) && vertices.Contains(end)))
             {
                 return null;
             }
 
+            var info = new Dictionary<Vertex<T>, (Vertex<T> founder, float distance)>();
 
+            var queue = new PriorityQue<Vertex<T>>(Comparer<Vertex<T>>.Create((a, b) => info[a].distance.CompareTo(info[b].distance)));
 
-            return null;
+            for (int i = 0; i < Count; i++)
+            {
+                vertices[i].IsVisited = false;
+                info.Add(vertices[i], (null, int.MaxValue));
+            }
+
+            info[start] = (null, 0);
+            queue.Enqueu(start);
+
+            while (!queue.IsEmpty())
+            {
+                var current = queue.Deqeue();
+                current.IsVisited = true;
+
+                foreach (var edge in current.Neighbors)
+                {
+                    var neighbor = edge.EndingPoint;
+                    float tentative = edge.Distance + info[current].distance;
+
+                    if (tentative < info[neighbor].distance)
+                    {
+                        info[neighbor] = (current, tentative);
+                        neighbor.IsVisited = false;
+                    }
+
+                    if (!queue.Contains(neighbor) && !neighbor.IsVisited)
+                    {
+                        queue.Enqueu(neighbor);
+                    }
+                }
+
+                if (current == end)
+                {
+                    break;
+                }
+            }
+
+            var path = new Stack<Vertex<T>>();
+
+            var currentV = info.Where(x => x.Key == end).First();
+            while (true)
+            {
+                path.Push(currentV.Key);
+
+                if (currentV.Value.founder == null)
+                {
+                    if (path.Count == 1)
+                    {
+                        return null;
+                    }
+
+                    break;
+                }
+
+                currentV = new KeyValuePair<Vertex<T>, (Vertex<T> founder, float distance)>(currentV.Value.founder, info[currentV.Value.founder]);
+
+            }
+
+            return path;
         }
 
         //public bool IfNegativeCycleExists()
