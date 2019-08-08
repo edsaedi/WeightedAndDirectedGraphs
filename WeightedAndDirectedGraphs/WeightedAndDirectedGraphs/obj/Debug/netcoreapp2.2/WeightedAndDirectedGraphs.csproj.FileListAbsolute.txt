@@ -1,0 +1,4 @@
+\\GMRDC1\Folder Redirection\Edan.Saedi\Desktop\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\obj\Debug\netcoreapp2.2\WeightedAndDirectedGraphs.csprojAssemblyReference.cache
+\\GMRDC1\Folder Redirection\Edan.Saedi\Desktop\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\obj\Debug\netcoreapp2.2\WeightedAndDirectedGraphs.csproj.CoreCompileInputs.cache
+\\GMRDC1\Folder Redirection\Edan.Saedi\Desktop\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\obj\Debug\netcoreapp2.2\WeightedAndDirectedGraphs.AssemblyInfoInputs.cache
+\\GMRDC1\Folder Redirection\Edan.Saedi\Desktop\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\WeightedAndDirectedGraphs\obj\Debug\netcoreapp2.2\WeightedAndDirectedGraphs.AssemblyInfo.cs

@@ -7,13 +7,7 @@ namespace WeightedAndDirectedGraphs
 {
     public class Graph<T>
     {
-        public enum Heuristics
-        {
-            Manhattan,
-            Euclidean
-        }
-
-        private List<Vertex<T>> vertices { get; set; }
+        internal List<Vertex<T>> vertices { get; set; }
 
         public int Count => Vertices.Count;
 
